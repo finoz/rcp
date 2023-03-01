@@ -1,0 +1,37 @@
+{
+	"name": "finoz/rcp",
+	"version": "1.1.0",
+	"scripts": {
+		"start": "npm run server:init & npm run webpack:watch",
+		"server:init": "node server.js",
+		"webpack:watch": "webpack --config webpack.config.js --mode=development --watch",
+		"webpack:build": "webpack --config webpack.config.js --mode=production",
+		"build": "npm run server:init & npm run webpack:build"
+	},
+	"devDependencies": {
+		"css-loader": "^6.7.1",
+		"file-loader": "^6.2.0",
+		"mini-css-extract-plugin": "^2.6.1",
+		"resolve-url-loader": "^5.0.0",
+		"sass": "^1.55.0",
+		"sass-loader": "^13.1.0",
+		"svg-spritemap-webpack-plugin": "^4.5.0",
+		"webpack": "^5.74.0",
+		"webpack-cli": "^4.10.0",
+		"webpackbar": "^5.0.2"
+	},
+	"dependencies": {
+		"lazysizes": "5.3.2",
+		"micromodal": "0.4.6",
+		"slugify": "^1.6.5",
+		"query-string": "8.1.0",
+		"me": "finoz/me#master",
+		"what-input": "5.2.10",
+		"showdown": "^2.1.0",
+		"@notionhq/client": "^2.2.3",
+		"notion-to-md": "~2.5.5",
+		"dotenv": "~16.0.*",
+		"express": "~4.18.*",
+		"cors": "~2.8.*"
+	}
+}

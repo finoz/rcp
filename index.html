@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>Rcp • by Finoz&Finaz</title>
+	<meta name="description" content="DB ricette w/ Notion API">
+
+	<link rel="stylesheet" href="./dist/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body data-page="rcp">
+	<div class="page">
+		<main class="page-main" id="main">
+			<section class="page-content page-content--heading">
+				<h1 class="page-title">RCP | DB ricette w/ Notion API</h1>
+			</section>
+			<section class="page-content">
+				<form class="searchtoolbar"
+					data-component="finfilter"
+					data-option-target=".item"
+					data-option-targetref="title,tags">
+					<input class="searchtoolbar-input" type="input" name="searchinput" id="searchinput" placeholder="Cerca">
+					<button class="searchtoolbar-reset" type="reset">✕</button>
+				</form>
+			</section>
+			<section class="page-content page-content--listing page-content--listing--rcp"
+				data-component="notionListingGenerator"
+				data-option-itemfields="title,tags"
+				data-option-itemclass="item"></section>
+		</main>
+	</div>
+</body>
+<script src='./dist/main.js' async></script>
+
+</html>

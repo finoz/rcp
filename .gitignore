@@ -1,0 +1,18 @@
+# ignore all /dist
+dist/*
+
+# ignore node dependency directories
+node_modules/
+
+# ignore log files
+*.log
+
+# ignore some editor settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# ignore 💩 files
+.DS_store
+.htaccess
+.env
